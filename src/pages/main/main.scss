@@ -1,0 +1,10 @@
+page-main {
+    ion-header {
+        text-align: center;
+        padding-top: 61px;
+    }
+    // 안드로이드 header 밑줄 없애기
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+        width: 0;
+    }
+}

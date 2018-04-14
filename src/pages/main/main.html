@@ -1,0 +1,20 @@
+
+<ion-header>
+
+   mind [ &nbsp;&nbsp;&nbsp;&nbsp; ]
+  <!-- <ion-navbar>
+    <ion-title>mind [ ]</ion-title>
+  </ion-navbar> -->
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item >
+    <ion-label>Date</ion-label>
+    <!-- <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"> -->
+    <ion-datetime displayFormat="YYYY/MM/DD" [(ngModel)]="myDate">
+     dddd</ion-datetime>
+     <ion-list>{{date | date:'yyyy-MM-dd'}}</ion-list>
+  </ion-item>
+</ion-content>
