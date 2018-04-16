@@ -1,10 +1,78 @@
 page-main {
+
+    
+
     ion-header {
         text-align: center;
-        padding-top: 61px;
+        margin-top: 45px;
+        
     }
-    // 안드로이드 header 밑줄 없애기
+    // and header 밑줄 없애기
     .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
         width: 0;
     }
+
+    
+    // ion-content {
+    //     position: relative;
+    //     ion-item {
+    //         margin-top:  112px;
+    //         background: red;
+    //         width: 100%;
+    //         text-align: center;
+    //         margin: 0 auto;
+    //     }
+
+    //     // timepicker 조정
+        
+    //      .item-inner:first-child {
+    //     border-bottom-color: transparent !important;
+        
+    //     position: absolute;
+    //     // width: 80%;
+    //     left: 50%;
+    //     // text-align: center;
+    //     transform: translateX(-50%);
+    //     // overflow: visible;
+    //         .datetime-text{
+    //             font-size: 30px; 
+    //         }
+            
+    //     }
+       
+    //     // 위치 input 조정
+    //     .item-block:nth-child(2){
+    //         border-bottom: 2px solid #979797;
+    //         width: 42.7%;
+    //         margin: 0 auto;
+    //     }
+
+    //     input {
+    //         text-align: center;
+    //     }
+
+    //     // [ ] input 조정
+    //     .item-inner:last-child {
+    //         width: 100%;
+    //         background: red;
+    //     }
+    //     .list-ios > .item-block:last-child {
+    //         border-bottom: none;
+    //         width: 80%;
+    //         margin: 0 auto; 
+           
+    //     }
+    //     .list-ios > .item-block:last-child::before {
+    //         content: '[';
+    //         font-size: 36px;
+    //     }
+    //     .list-ios > .item-block:last-child::after {
+    //         content: ']';
+    //         font-size: 36px;
+    //     }
+       
+
+    // }
+
+   
 }

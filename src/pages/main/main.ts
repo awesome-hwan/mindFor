@@ -18,8 +18,8 @@ export class MainPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MainPage');
-  }
+  
+  myDate: String = new Date().toISOString();
+
 
 }

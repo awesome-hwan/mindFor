@@ -1,5 +1,5 @@
 
-<ion-header>
+<ion-header padding>
 
    mind [ &nbsp;&nbsp;&nbsp;&nbsp; ]
   <!-- <ion-navbar>
@@ -10,11 +10,21 @@
 
 
 <ion-content padding>
-  <ion-item >
-    <ion-label>Date</ion-label>
-    <!-- <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"> -->
-    <ion-datetime displayFormat="YYYY/MM/DD" [(ngModel)]="myDate">
-     dddd</ion-datetime>
-     <ion-list>{{date | date:'yyyy-MM-dd'}}</ion-list>
-  </ion-item>
+  <ion-list>
+    <ion-item>
+      <ion-datetime displayFormat="YYYY/MM/DD" pickerFormat="YYYY MM DD" [(ngModel)]="myDate" min="2018-01-01" max="2028-12-31"></ion-datetime>
+    </ion-item>
+
+     <ion-item>
+      <ion-input type="text" placeholder="내방 안에서"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" placeholder="오늘하루는 이랬어"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <button ion-button color="dark" clear>이전 마인드 보기</button>
+    </ion-item>
+  </ion-list> 
 </ion-content>
