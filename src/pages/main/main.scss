@@ -5,13 +5,38 @@ page-main {
     ion-header {
         text-align: center;
         margin-top: 45px;
-        
+        border-bottom: none;
     }
-    // and header 밑줄 없애기
-    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
-        width: 0;
+    // android header 밑줄 없애기
+    .header-md::after {
+        content: none;
     }
 
+    // ios item-list 윗줄 제거
+    .list-ios > .item-block:first-child {
+     border-top: 0;   
+    }
+
+    // 중앙정렬
+    .text-input-ios, .text-input-md {
+        margin: 0;
+    }
+    // 중앙정렬
+    .datetime-ios, .datetime-md {
+        padding: 0;
+    }
+    // ios datetime, input 밑줄 제거
+    .list-ios .item-block .item-inner {
+        border-bottom: 0;
+    }
+    .list-ios > .item-block:last-child{
+        border-bottom: 0;
+    }
+
+
+    // #datetime-0-0{
+    //     border: 10px solid white;
+    // }
     
     // ion-content {
     //     position: relative;

@@ -11,7 +11,9 @@ $font-path: "../assets/fonts";
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
-
+* {
+  font-family: noto-sans;
+}
 @import "ionic.globals";
 
 

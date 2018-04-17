@@ -2,29 +2,34 @@
 <ion-header padding>
 
    mind [ &nbsp;&nbsp;&nbsp;&nbsp; ]
-  <!-- <ion-navbar>
-    <ion-title>mind [ ]</ion-title>
-  </ion-navbar> -->
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-list>
-    <ion-item>
-      <ion-datetime displayFormat="YYYY/MM/DD" pickerFormat="YYYY MM DD" [(ngModel)]="myDate" min="2018-01-01" max="2028-12-31"></ion-datetime>
-    </ion-item>
-
-     <ion-item>
-      <ion-input type="text" placeholder="내방 안에서"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-input type="text" placeholder="오늘하루는 이랬어"></ion-input>
-    </ion-item>
-    
-    <ion-item>
-      <button ion-button color="dark" clear>이전 마인드 보기</button>
-    </ion-item>
+  <ion-list padding>
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center>
+            <ion-datetime padding-top displayFormat="YYYY/MM/DD" pickerFormat="YYYY MM DD" [(ngModel)]="myDate"
+              min="2018-01-01" max="2028-12-31"></ion-datetime>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input text-center padding-top type="text" placeholder="내방 안에서"></ion-input>
+        </ion-col>
+      </ion-row>
+       <ion-row>
+         <ion-col>
+          <ion-input text-center padding-top type="text" placeholder="오늘하루는 이랬어"></ion-input>
+         </ion-col>  
+       </ion-row> 
+       <ion-row>
+         <ion-col text-center>
+          <button padding-top ion-button color="dark" clear>이전 마인드 보기</button>
+         </ion-col>  
+       </ion-row> 
+    </ion-grid>
   </ion-list> 
 </ion-content>
