@@ -33,6 +33,42 @@ page-main {
         border-bottom: 0;
     }
 
+    .when {
+        font-size: 36px;
+        font-weight: 300;
+        margin-top: 112px;
+     
+    }
+    .where {
+        width: 160px;        
+        border-bottom: 2px solid #979797;
+        margin: 0 auto; 
+        padding-bottom: 8px;
+        color: #979797;
+        font-weight: 500;
+        tab-size: 18px;
+
+    }
+    .how {
+        width: 100%;
+        &::before {
+            font-size: 36px;
+            font-weight: 700;
+            content: '[';
+        }
+        &::after {
+            font-size: 36px;
+            font-weight: 700;
+            content: ']';
+        }
+    }
+
+    .text-input-ios, .text-input-md {
+        padding-top: 0;
+        width: 85%;
+    }
+
+
 
     // #datetime-0-0{
     //     border: 10px solid white;
