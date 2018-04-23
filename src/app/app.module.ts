@@ -10,7 +10,8 @@ import { MainPage } from '../pages/main/main';
 @NgModule({
   declarations: [
     MyApp,
-    MainPage
+    MainPage,
+    
   ],
   imports: [
     BrowserModule,
